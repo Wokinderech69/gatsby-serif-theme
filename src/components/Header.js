@@ -2,8 +2,8 @@ import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
 import Menu from './Menu';
 import Hamburger from './Hamburger';
-// import logo from '../../static/images/logo/logo.svg';
-// import logoMobile from '../../static/images/logo/logo-mobile.svg';
+// import logo from '../../static/images/logo/logo.png';
+// import logoMobile from '../../static/images/logo/logo.png';
 import MenuMobile from './MenuMobile';
 
 class Header extends React.Component {
@@ -27,7 +27,7 @@ class Header extends React.Component {
         <div className="container">
           <div className="logo">
             <Link to="/">
-              <img height={config.logo.desktop_height} alt={config.logo.alt} src={config.logo.desktop} />
+						<img height={config.logo.desktop_height} alt={config.logo.alt} src={config.logo.desktop} />
             </Link>
           </div>
           <div className="logo-mobile">

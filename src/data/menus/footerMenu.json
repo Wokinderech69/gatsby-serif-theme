@@ -1,12 +1,28 @@
 [
-    {
-        "name": "Home",
-        "url": "/",
-        "weight": 1
-    },
-    {
-        "name": "Contact",
-        "url": "/contact/",
-        "weight": 2
-    }
+  {
+    "name": "Головна",
+    "url": "/",
+    "weight": 1
+  },
+
+  {
+    "name": "Запис до майстра",
+    "url": "/record/",
+    "weight": 2
+  },
+  {
+    "name": "Контакти",
+    "url": "/contact/",
+    "weight": 3
+  },
+  {
+    "name": "Графік роботи",
+    "url": "/schedule/",
+    "weight": 4
+  },
+  {
+    "name": "О салоні",
+    "url": "/about/",
+    "weight": 5
+  }
 ]

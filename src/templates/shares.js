@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import SEO from "../components/SEO";
 import Layout from "../components/Layout";
 
-const Basic = ({ data }) => {
+const Shares = ({ data }) => {
   const { title } = data.markdownRemark.frontmatter;
   const { html } = data.markdownRemark;
   return (
@@ -19,7 +19,7 @@ const Basic = ({ data }) => {
           </div>
         </div>
       </div>
-      <h1>content</h1>
+      <h1>content shares</h1>
     </Layout>
   );
 };
@@ -39,4 +39,4 @@ export const query = graphql`
   }
 `;
 
-export default Basic;
+export default Shares;

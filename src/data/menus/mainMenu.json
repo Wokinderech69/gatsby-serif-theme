@@ -1,22 +1,37 @@
 [
-    {
-        "name": "Services",
-        "url": "/services/",
-        "weight": 2
-    },
-    {
-        "name": "Team",
-        "url": "/team/",
-        "weight": 3
-    },
-    {
-        "name": "About",
-        "url": "/about/",
-        "weight": 4
-    },
-    {
-        "name": "Contact",
-        "url": "/contact/",
-        "weight": 5
-    }
+	{
+		"name": "Головна",
+		"url": "/",
+		"weight": 3
+	},
+	{
+		"name": "Послуги",
+		"url": "/services/",
+		"weight": 4
+	},
+	{
+		"name": "Ціни",
+		"url": "/prices/",
+		"weight": 5
+	},
+	{
+		"name": "Курси",
+		"url": "/courses/",
+		"weight": 6
+	},
+	{
+		"name": "Галерея",
+		"url": "/gallery/",
+		"weight": 7
+	},
+	{
+		"name": "Акції",
+		"url": "/shares/",
+		"weight": 8
+	},
+	{
+		"name": "Відгуки",
+		"url": "/reviews/",
+		"weight": 9
+	}
 ]
