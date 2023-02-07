@@ -20,7 +20,8 @@
 		"meta_twitter_creator": "@zerostaticio"
 	},
 	"footer": {
-		"copyright_text": "Free Gatsby theme by",
-		"copyright_link": "https://www.zerostatic.io"
+		"copyright_text": "© 2023 Салон краси 'Meri & Meri'",
+		"copyright_text2": "Наш партнер:",
+		"copyright_link": "https://getskill.com.ua/ru"
 	}
 }

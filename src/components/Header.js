@@ -2,51 +2,54 @@ import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
 import Menu from './Menu';
 import Hamburger from './Hamburger';
+import Cta from '../templates/cta';
 // import logo from '../../static/images/logo/logo.png';
 // import logoMobile from '../../static/images/logo/logo.png';
 import MenuMobile from './MenuMobile';
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      menuActive: false
-    };
-  }
+	constructor(props) {
+		super(props);
+		this.state = {
+			menuActive: false
+		};
+	}
 
-  toggleMenu = menuActive => {
-    this.setState(prevState => ({
-      menuActive: !prevState.menuActive
-    }));
-  };
+	toggleMenu = menuActive => {
+		this.setState(prevState => ({
+			menuActive: !prevState.menuActive
+		}));
+	};
 
-  render() {
-    const config = this.props.data.configJson;
-    return (
-      <div className="header">
-        <div className="container">
-          <div className="logo">
-            <Link to="/">
-						<img height={config.logo.desktop_height} alt={config.logo.alt} src={config.logo.desktop} />
-            </Link>
-          </div>
-          <div className="logo-mobile">
-            <Link to="/">
-              <img height={config.logo.desktop_height} alt={config.logo.alt} src={config.logo.mobile} />
-            </Link>
-          </div>
-          <MenuMobile active={this.state.menuActive} />
-          <Menu />
-          <Hamburger toggleMenu={this.toggleMenu} />
-        </div>
-      </div>
-    );
-  }
+	render() {
+		const config = this.props.data.configJson;
+		return (
+			<div className="header">
+				<div className="container">
+					<div className="logo">
+						<Link to="/">
+							<img height={config.logo.desktop_height} alt={config.logo.alt} src={config.logo.desktop} />
+						</Link>
+					</div>
+					<div className="logo-mobile">
+						<Link to="/">
+							<img height={config.logo.desktop_height} alt={config.logo.alt} src={config.logo.mobile} />
+						</Link>
+					</div>
+
+					<MenuMobile active={this.state.menuActive} />
+					<Menu />
+					<Hamburger toggleMenu={this.toggleMenu} />
+				</div>
+				<Cta />
+			</div>
+		);
+	}
 }
 
 const props = () => (
-  <StaticQuery
-    query={graphql`
+	<StaticQuery
+		query={graphql`
       query HeaderQuery {
         configJson {
           logo {
@@ -58,8 +61,8 @@ const props = () => (
         }
       }
     `}
-    render={data => <Header data={data} />}
-  />
+		render={data => <Header data={data} />}
+	/>
 );
 
 export default props;
